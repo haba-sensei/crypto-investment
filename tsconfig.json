@@ -1,0 +1,51 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "allowJs": false,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "paths": {
+            "@": ["./src/*"],
+            "@application/*": ["./src/application/*"],
+            "@domain/*": ["./src/domain/*"],
+            "@infrastructure/*": ["./src/infrastructure/*"],
+            "@router/*": ["./src/route/*r"],
+            "@interfaces/*": ["./src/interfaces/*"],
+            "@constants/*": ["./src/constants/*"],
+            "@ui/*": ["./src/ui/*"],
+            "@assets/*": ["./src/ui/assets/*"],
+            "@components/*": ["./src/ui/components/*"],
+            "@componentsGlobal": ["./src/ui/components/componentsGlobal"],
+            "@views/*": ["./src/ui/views/*"],
+            "@shared/*": ["./src/ui/components/shared/*"],
+            "@containers/*": ["./src/ui/components/shared/containers/*"],
+            "@generals/*": ["./src/ui/components/shared/generals/*"],
+            "@layout/*": ["./src/ui/components/layout/*"],
+            "@plugins/*": ["./src/ui/components/plugins/*"],
+            "@types/*": ["./src/types/*"],
+            "@icons/*": ["./src/ui/components/icons/*"],
+            "@scss/*": ["./src/ui/assets/scss/*"],
+            "@css/*": ["./src/ui/assets/styles/*"],
+            "@imgs/*": ["./src/ui/assets/imgs/*"],
+            "@helpers/*": ["./src/helpers/*"]
+        }
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
+}
