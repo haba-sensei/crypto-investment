@@ -1,5 +1,7 @@
 import { useCallback, useState } from "react";
 
+import { formatPrice } from "../helpers/formatValue";
+
 const useBalance = (): [
     string,
     (event: React.ChangeEvent<HTMLInputElement>) => void
@@ -26,7 +28,7 @@ const useCalculateQuantity = (balance: string): ((price: number) => number) => {
             if (price === 0 || isNaN(price) || isNaN(parseFloat(balance))) {
                 return 0;
             }
-            return parseFloat(balance) / price;
+            return formatPrice(parseFloat(balance) / price, 3);
         },
         [balance]
     );

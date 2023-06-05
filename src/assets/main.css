@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-900 overflow-hidden;
+}
+
+.thead {
+    font-size: 0.8rem;
+}
+
+.thead-2-lines {
+    @apply px-4 py-2 text-end whitespace-nowrap;
+}
