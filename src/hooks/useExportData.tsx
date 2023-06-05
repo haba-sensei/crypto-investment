@@ -1,8 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useCallback } from "react";
 
-import { StateProps } from "../interfaces/global";
-
-const useExportCSV = (data: StateProps[]) => {
+const useExportCSV = (data: any[]) => {
     const exportCSV = useCallback(() => {
         if (data.length === 0) {
             console.log("No data to export");
@@ -54,7 +53,7 @@ const useExportCSV = (data: StateProps[]) => {
     return exportCSV;
 };
 
-const useExportJSON = (data: StateProps[]) => {
+const useExportJSON = (data: any[]) => {
     const exportJSON = useCallback(() => {
         if (data.length === 0) {
             console.log("No data to export");
